@@ -22,7 +22,7 @@ int main(){
 				myStack.display();
 				break;
 			case 'x':
-				cout << "Input Operator 	: "; cin >> _operator;
+				cout << "Input Opertor(+, -) 	: "; cin >> _operator;
 				cout << "Input Operand 2 	: "; cin >> operand2;
 				operand1 = myStack.getTop();
 				myOperator.setOperator(_operator, operand1, operand2);
@@ -31,7 +31,7 @@ int main(){
 			case 'c':
 				myStack.clear();
 				cout << "Input Operand 1 	: "; cin >> operand1;
-				cout << "Input Operator 	: "; cin >> _operator;
+				cout << "Input Operator(+, -) 	: "; cin >> _operator;
 				cout << "Input Operand 2 	: "; cin >> operand2;
 				myOperator.setOperator(_operator, operand1, operand2);
 				myStack.setStack(perintah, myOperator.getResult());
